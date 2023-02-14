@@ -3,7 +3,6 @@
 import pyfiglet
 import requests
 import os
-import pkg_resources
 from time import sleep
 from datetime import datetime
 from pytz import timezone
@@ -45,7 +44,7 @@ def start():
                 continue
             elif "User" in str(req_game.text):
                 print(f"======================")
-                print(f"{red}[{white}{logTime()}{red}] {white}Nickname: {green}{req_game.json()['User']['Username']}")
+                print(f"Nickname: {green}{req_game.json()['User']['Username']}")
                 print(f"Country: {green}{req_game.json()['User']['Country']}")
                 print(f"Trophy: {green}{req_game.json()['User']['SkillRating']}")
                 print(f"Crown: {green}{req_game.json()['User']['Crowns']}")
