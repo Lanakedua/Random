@@ -3,6 +3,7 @@
 import pyfiglet
 import requests
 import os
+import pkg_resources
 from time import sleep
 from datetime import datetime
 from pytz import timezone
